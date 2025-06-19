@@ -22,12 +22,13 @@ public class Lesson {
     /**
      * Constructs a Lesson.
      *
-     * @param subject   the lesson subject
-     * @param date      the calendar date (Saturday or Sunday)
-     * @param timeSlot  MORNING or AFTERNOON
-     * @param price     price per student
+     * @param subject  the lesson subject
+     * @param date     the calendar date (Saturday or Sunday)
+     * @param timeSlot MORNING or AFTERNOON
+     * @param price    price per student
+     * @param i
      */
-    public Lesson(Subject subject, LocalDate date, TimeSlot timeSlot, double price) {
+    public Lesson(Subject subject, LocalDate date, TimeSlot timeSlot, double price, int i) {
         this.id = IdGenerator.nextId("L");
         this.subject = subject;
         this.date = date;

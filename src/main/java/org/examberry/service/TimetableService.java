@@ -37,10 +37,10 @@ public class TimetableService {
             double nonVerbalPrice = 27.0;
 
             // Create lessons for the weekend:
-            lessons.add(new Lesson(Subject.ENGLISH, saturday, TimeSlot.MORNING, englishPrice));
-            lessons.add(new Lesson(Subject.MATH, saturday, TimeSlot.AFTERNOON, mathPrice));
-            lessons.add(new Lesson(Subject.VERBAL_REASONING, sunday, TimeSlot.MORNING, verbalPrice));
-            lessons.add(new Lesson(Subject.NON_VERBAL_REASONING, sunday, TimeSlot.AFTERNOON, nonVerbalPrice));
+            lessons.add(new Lesson(Subject.ENGLISH, saturday, TimeSlot.MORNING, englishPrice, 1));
+            lessons.add(new Lesson(Subject.MATH, saturday, TimeSlot.AFTERNOON, mathPrice, 1));
+            lessons.add(new Lesson(Subject.VERBAL_REASONING, sunday, TimeSlot.MORNING, verbalPrice, 1));
+            lessons.add(new Lesson(Subject.NON_VERBAL_REASONING, sunday, TimeSlot.AFTERNOON, nonVerbalPrice, 1));
         }
         System.out.println("✔ Generated timetable for " + weekendsToGenerate
                 + " weekends (" + lessons.size() + " lessons).");
